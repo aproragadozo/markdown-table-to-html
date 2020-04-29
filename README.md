@@ -1,10 +1,20 @@
-# Convert Markdown table to HTML `<table>` element using md2html
+# A tiny Python script to turn Markdown-format tables to HTML tables
 
-When you need to include a table that has one or more CSS classes applied to one or more of its columns or cells in a Markdown file, you need to use a HTML `<table>` element.
+Unless you are writing Markdown in a flavour that supports CSS classes or merged cells, you need to replace some or all of your tables in Markdown with their inline HTML equivalent.
 
-The md2html script makes the job of converting a Markdown-format table to a valid HTML `<table>` element.
+This is what this little utility is supposed to help with.
 
-Follow the steps in this article when you need to convert a Markdown table to HTML.
+## Context
+
+This is my first real stab at producing a standalone executable using [pyinstaller](https://pypi.org/project/PyInstaller/).
+
+I made it to help some of my colleauges who routinely needed to add CSS classes and merge cells in tables with hundreds of rows and/or columns using a Markdown flavour that does not support such niceties.
+
+Although it does work, there are a number of usability issues with the script - I intend to create GitHub Issues to solve these.
+
+If you have any trouble using the script, or have ideas for features, please open a PR or file a GH Issue.
+
+## Usage
 
 1. Save the `md2html.exe` file to a separate folder on your computer.
 
